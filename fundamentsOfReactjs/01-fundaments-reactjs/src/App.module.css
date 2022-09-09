@@ -3,9 +3,19 @@
   margin: 2rem auto;
   padding: 0 1rem;
 
-  display: flex;
+  display: grid;
   flex-direction: row;
   grid-template-columns: 256px 1fr;
-  gap: 2rem auto;
+  gap: 2rem;
   align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }
